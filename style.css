@@ -12,6 +12,7 @@
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
 }
+
 /*  Colors Selection */
 :root {
   --main-color: #033a80;
@@ -26,11 +27,13 @@
   --light: #d8dbe0;
   --dark: #28292c;
 }
+
 /* Body background and Text color */
 body.active {
   --text-color: #fff;
   --bg-color: #1f1b27;
 }
+
 body {
   background: var(--bg-color);
   color: var(--text-color);
@@ -39,6 +42,7 @@ body {
 section {
   padding: 50px 10%;
 }
+
 *::selection {
   color: var(--bg-color);
   background: var(--main-color);
@@ -55,6 +59,7 @@ section {
   gap: 1rem;
   margin-top: 20px;
 }
+
 .hero-image {
   order: 2;
 }
@@ -62,15 +67,18 @@ section {
 .hero-text {
   padding: 90px 20px;
 }
+
 .hero-text h1 {
   font-size: var(--big-font);
   font-weight: 600;
 }
+
 .hero-text h2 {
   font-size: 24px;
   font-weight: 600;
   font-style: normal;
 }
+
 .hero-text p {
   font-size: 20px;
   font-weight: 400;
@@ -80,6 +88,7 @@ section {
     Oxygen-Sans, Ubuntu, Cantarell, "helvetica neue", sans-serif;
   line-height: 30px;
 }
+
 .btn {
   display: inline-block;
   background: var(--main-color);
@@ -90,6 +99,7 @@ section {
   font-weight: 500;
   line-height: 25px;
 }
+
 .btn:hover {
   background: var(--hover);
 }
@@ -97,26 +107,31 @@ section {
 /* Making Responsive */
 @media (max-width: 991px) {
   section {
-    padding: 50px 4%;
+    padding: 50px 6%;
   }
 }
+
 @media (max-width: 881px) {
   .hero-text {
     padding: 80px 17px;
   }
+
   :root {
     --big-font: 2.7rem;
     --medium-font: 1.4rem;
   }
+
   .hero-text h1 {
     font-size: var(--big-font);
     font-weight: 600;
   }
+
   .hero-text h2 {
     font-size: 21px;
     font-weight: 600;
     font-style: normal;
   }
+
   .hero-text p {
     font-size: 18px;
     font-weight: 400;
@@ -127,6 +142,7 @@ section {
     line-height: 27px;
   }
 }
+
 @media (max-width: 768px) {
   .btn {
     padding: 0.5rem 1rem;
@@ -135,12 +151,15 @@ section {
     font-weight: 500;
     line-height: 20px;
   }
+
   .hero-text h1 {
     font-size: 17px;
   }
+
   .hero-text h2 {
     font-size: 15px;
   }
+
   .hero-text p {
     font-size: 13px;
     font-weight: 400;
@@ -150,24 +169,33 @@ section {
       Oxygen-Sans, Ubuntu, Cantarell, "helvetica neue", sans-serif;
     line-height: 22px;
   }
+
+  .section {
+    padding: 50px 4%;
+  }
 }
+
 @media (max-width: 600px) {
   .hero-text {
     padding: 30px 12px;
   }
+
   :root {
     --big-font: 2.4rem;
     --medium-font: 1.2rem;
   }
+
   .hero-text h1 {
     font-size: var(--big-font);
     font-weight: 600;
   }
+
   .hero-text h2 {
     font-size: 17px;
     font-weight: 600;
     font-style: normal;
   }
+
   .hero-text p {
     font-size: 15px;
     font-weight: 400;
@@ -177,12 +205,15 @@ section {
       Oxygen-Sans, Ubuntu, Cantarell, "helvetica neue", sans-serif;
     line-height: 22px;
   }
+
   .hero-image {
     order: initial;
   }
+
   .hero {
     grid-template-columns: 3fr;
   }
+
   /* wait
       .home {
         grid-template-columns: 3fr;
@@ -195,16 +226,19 @@ section {
         order: initial;
       }          */
 }
+
 @media (max-width: 340px) {
   :root {
     --big-font: 1.7rem;
     --medium-font: 1.1rem;
   }
+
   .hero-text h2 {
     font-size: 15px;
     font-weight: 500;
     font-style: normal;
   }
+
   .hero-text p {
     font-size: 13px;
     font-weight: 400;
@@ -214,6 +248,7 @@ section {
       Oxygen-Sans, Ubuntu, Cantarell, "helvetica neue", sans-serif;
     line-height: 20px;
   }
+
   .hero-text {
     padding: 28px 10px;
   }
@@ -230,6 +265,7 @@ section {
   margin-left: 0;
   margin-right: 0;
 }
+
 .footer-text {
   font-size: 20px;
   line-height: 18px;
@@ -243,6 +279,7 @@ section {
   flex-direction: column;
   align-items: center;
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -257,17 +294,21 @@ header {
   transition: 0.2s;
   box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
+
 header.shadow {
   box-shadow: 0 0 4px rgb(14 55 54 / 15%);
 }
+
 .logo {
   font-size: 2rem;
   font-weight: 600;
   color: var(--text-color);
 }
+
 .navbar {
   display: flex;
 }
+
 .navbar li {
   margin-right: 30px;
 }
@@ -278,9 +319,11 @@ header.shadow {
   color: var(--text-color);
   font-weight: 500;
 }
+
 .navbar a:hover {
   color: var(--hover);
 }
+
 #menu-icon {
   font-size: 24px;
   cursor: pointer;
@@ -293,49 +336,62 @@ header.shadow {
   .navbar a {
     font-size: 0.8rem;
   }
+
   .logo {
     font-size: 1.1rem;
   }
 }
+
 @media (max-width: 1100px) {
   .navbar a {
     font-size: 1.1rem;
   }
+
   .logo {
     font-size: 1.8rem;
   }
 }
+
 @media (max-width: 991px) {
   .logo {
     font-size: 1.3rem;
   }
+
   header {
     padding: 18px 4%;
   }
+
   .navbar a {
     font-size: 1rem;
   }
 }
+
 @media (max-width: 768px) {
   .logo {
     font-size: 1.2rem;
   }
+
   #menu-icon {
     font-size: 28px;
   }
+
   .mini-flex {
     flex-direction: row;
   }
+
   .mfc {
     margin-right: 10px;
   }
+
   header {
     padding: 11px 4%;
   }
+
   #menu-icon {
     display: initial;
     color: var(--text-color);
   }
+
   header .navbar {
     position: absolute;
     top: -500px;
@@ -349,9 +405,11 @@ header.shadow {
     text-align: center;
     align-items: center;
   }
+
   .navbar.active {
     top: 100%;
   }
+
   .navbar a {
     padding: 1.5rem;
     display: block;
@@ -397,13 +455,15 @@ header.shadow {
 }
 
 /*  target the elemenent after the label*/
-.checkbox:checked + .label .ball {
+.checkbox:checked+.label .ball {
   transform: translateX(18px);
   background-color: #e2ded0;
 }
-.checkbox:checked + .label {
+
+.checkbox:checked+.label {
   background-color: #033a80;
 }
+
 .bxs-moon {
   color: white;
   scale: 0.75;
@@ -413,6 +473,7 @@ header.shadow {
   color: yellow;
   scale: 0.75;
 }
+
 /*skill section*/
 .skill-container {
   display: flex;
@@ -421,6 +482,7 @@ header.shadow {
   margin: 0 auto;
   padding: 0 10%;
 }
+
 .skills-heading {
   text-align: center;
   font-size: 3rem;
@@ -429,6 +491,7 @@ header.shadow {
 
   margin-top: 1.5rem;
 }
+
 .skill-item {
   width: 31%;
   margin-bottom: 2.3rem;
@@ -441,17 +504,20 @@ header.shadow {
   padding: 10px;
   height: auto;
 }
+
 .skill-item h3 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+
 .line-break {
   height: 1px;
   width: 100%;
   background: var(--text-color);
   margin-bottom: 0.5rem;
 }
+
 .skill-item p {
   font-size: 16px;
   font-weight: 500;
@@ -464,11 +530,13 @@ header.shadow {
     width: 48%;
   }
 }
+
 @media (max-width: 768px) {
   .skill-item {
     width: 48%;
   }
 }
+
 @media (max-width: 600px) {
   .skill-item {
     width: 100%;
@@ -492,6 +560,7 @@ header.shadow {
   margin-right: 10px;
   margin-left: 0;
 }
+
 .xp-container {
   display: flex;
   flex-flow: row wrap;
@@ -501,40 +570,48 @@ header.shadow {
   padding-left: 50px;
   padding-right: 50px;
 }
+
 .xp-item {
   width: 48%;
   margin-bottom: 1.5rem;
   align-items: center;
   height: auto;
 }
+
 .xp-mini-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .year {
   margin-right: 20px;
 }
+
 .jok {
   padding-left: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 0;
 }
+
 .mok {
   font-size: 18px;
 }
+
 .dok {
   font-size: 16px;
   display: flex;
   flex-direction: row;
 }
+
 .gok {
   display: flex;
   flex-direction: row;
   font-size: 16px;
   margin: 6px;
 }
+
 .bxs-circle {
   scale: 0.75;
 }
@@ -545,11 +622,13 @@ header.shadow {
     width: 42%;
   }
 }
+
 @media (max-width: 768px) {
   .xp-item {
     width: 96%;
   }
 }
+
 @media (max-width: 600px) {
   .xp-item {
     width: 92%;
@@ -569,6 +648,7 @@ header.shadow {
   justify-content: space-between;
   width: 48%;
 }
+
 .portfolio-container {
   display: flex;
   flex-flow: row wrap;
@@ -578,15 +658,18 @@ header.shadow {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .portfolio-image1 {
   width: 80%;
   height: 250px;
   background: url(/images/demo.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   margin-right: 20px;
   border-radius: 10px;
   border: 3px solid purple;
 }
+
 .portfolio-image2 {
   width: 80%;
   height: 250px;
@@ -596,12 +679,14 @@ header.shadow {
   border-radius: 10px;
   border: 3px solid purple;
 }
+
 .work-detail {
   font-size: 21px;
   font-family: Poppins;
   font-weight: 400;
   margin-top: 40px;
 }
+
 .pop {
   margin-top: 40px;
   background: var(--main-color);
@@ -612,6 +697,7 @@ header.shadow {
   transition: all 0.3s ease-out;
   cursor: pointer;
 }
+
 .nukta {
   margin-top: 3px;
   margin-bottom: 0;
@@ -622,14 +708,21 @@ header.shadow {
 /* Making Responsive */
 @media (max-width: 1024px) {
   .portfolio-item {
-    width: 42%;
+    width: 75%;
+    padding: 25px 20px;
+  }
+
+  .portfolio-container {
+    justify-content: center;
   }
 }
+
 @media (max-width: 768px) {
   .portfolio-item {
-    width: 96%;
+    width: 90%;
   }
 }
+
 @media (max-width: 600px) {
   .portfolio-item {
     width: 92%;
@@ -656,10 +749,12 @@ header.shadow {
   color: var(--text-color);
   padding: 2rem;
 }
+
 .modal.active {
   opacity: 1;
   visibility: visible;
 }
+
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -667,21 +762,25 @@ header.shadow {
   color: black;
   margin-bottom: 20px;
 }
+
 .close-button {
   cursor: pointer;
   border: none;
   background: none;
 }
+
 .bx-x {
   font-size: 40px;
   line-height: 30px;
   font-weight: 700;
   color: var(--text-color);
 }
+
 .bx-x:hover {
   color: var(--main-color);
   scale: 1.2;
 }
+
 #overlay {
   position: fixed;
   top: 0;
@@ -695,16 +794,19 @@ header.shadow {
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 #overlay.active {
   pointer-events: all;
   opacity: 1;
 }
+
 .modal-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
 }
+
 .popup-img-mega {
   width: 47%;
   height: 40%;
@@ -719,6 +821,7 @@ header.shadow {
   align-items: center;
   padding: 10px;
 }
+
 .popup-title {
   font-size: 24px;
   font-weight: 600;
@@ -726,6 +829,7 @@ header.shadow {
   color: var(--text-color);
   border-bottom: 2px solid var(--text-color);
 }
+
 .popup-case-study {
   width: 100%;
   height: 100%;
@@ -734,6 +838,7 @@ header.shadow {
   justify-content: space-between;
   align-items: center;
 }
+
 .popup-details {
   font-size: 21px;
   line-height: 25px;
@@ -746,18 +851,21 @@ header.shadow {
     font-size: 20px;
   }
 }
+
 @media (max-width: 768px) {
   .popup-details {
     font-size: 17px;
     line-height: 25px;
   }
 }
+
 @media (max-width: 600px) {
   .popup-details {
     font-size: 17px;
     line-height: 23px;
   }
 }
+
 .bxicons {
   font-size: 30px;
 }
